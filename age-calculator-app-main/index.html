@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <script src="script.js"></script>
+  <title>Age calculator app</title>
+</head>
+<body>
+
+  <div class="sheet-container">
+    <div class="date-container">
+      <div>DAY
+        <input type="number" name="day" id="user-birth-day" min="1" max="31" placeholder="   DD">
+      </div>
+      
+      <div>MONTH
+        <input type="number" name="month" id="user-birth-month" min="1" max="12" placeholder="   MM">
+
+      </div>
+
+      <div>YEAR
+        <input type="number" name="year" id="user-birth-year" min="1900" max="2023" placeholder="   YYYY">
+      </div>
+
+    </div>
+    <div class="arrow-container">
+      <hr>
+      <button onclick="startCalculator()">
+        <span class="material-symbols-outlined">
+        arrow_forward
+        </span>
+      </button>
+
+    </div>
+    
+    <div class="years-info" id="user-age">
+      <p>
+        <span id="years">- -</span> years<br>
+        <span id="months">- -</span> months<br>
+        <span id="days">- -</span> days
+      </p>
+    </div>
+  </div>
+  
+  <footer class="end">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/killdiotxx">Alma Mena</a>.
+    </div>
+  </footer>
+</body>
+</html>
